@@ -5,28 +5,15 @@ import { black } from '../../components/colors'
 import { Feather } from '@expo/vector-icons';
 import { w } from '../../components/dimens';
 
-
-function HomeScreen() {
-    return (
-        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-            <Text>Home!</Text>
-        </View>
-    );
-}
-
-function SettingsScreen() {
-    return (
-        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-            <Text>Settings!</Text>
-        </View>
-    );
-}
+import homeStack from './home/homeStackScreen'
+import schedulesStack from './schedules/schedulesStackScreen'
+import profileStack from './profile/profileStackScreen'
 
 const Tab = createBottomTabNavigator();
 function main() {
     return (
         <Tab.Navigator>
-            <Tab.Screen name="Home" component={HomeScreen}
+            <Tab.Screen name="Home" component={homeStack}
                 options={{
                     headerShown: false,
                     tabBarLabel: 'Início',
@@ -34,7 +21,7 @@ function main() {
                         <Feather name={"home"} color={black()} size={w(23)}/>
                     ),
                 }} />
-            <Tab.Screen name="Agendamentos" component={HomeScreen} 
+            <Tab.Screen name="Agendamentos" component={schedulesStack} 
                 options={{
                     headerShown: false,
                     tabBarLabel: 'Agendamentos',
@@ -42,7 +29,7 @@ function main() {
                         <Feather name={"calendar"} color={black()} size={w(23)}/>
                     ),
                 }} />
-            <Tab.Screen name="Perfil" component={SettingsScreen} 
+            <Tab.Screen name="Perfil" component={profileStack} 
                 options={{
                     headerShown: false,
                     tabBarLabel: 'Perfil',
