@@ -21,3 +21,7 @@ export const light_gray = () => { return "#f1f1f1" };
 //green
 
 export const faded_green = () => { return "#aad6c2" };
+
+//red
+
+export const red = () => { return "#DA0000" };

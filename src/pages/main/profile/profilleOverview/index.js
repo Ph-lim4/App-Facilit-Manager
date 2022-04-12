@@ -1,9 +1,9 @@
 import React from 'react';
 import { TouchableOpacity, View } from 'react-native';
-import { Container, Footer } from '../../styles';
+import { Container, Footer } from '../styles';
 import { CustomText } from '../../../../components/ui/texts';
 import { h, w } from '../../../../components/dimens';
-import { gray } from '../../../../components/colors';
+import { gray, red } from '../../../../components/colors';
 
 const profilleOverview = (props) => {
   return (
@@ -32,7 +32,7 @@ const profilleOverview = (props) => {
 
       {/*Localização*/}
       <View style={{ flexDirection: 'row', marginTop: h(10) }}>
-        <TouchableOpacity style={{ alignItems: `center`, flexDirection: `row`, height: h(20) }} onPress={() => props.navigation.navigate()}>
+        <TouchableOpacity style={{ alignItems: `center`, flexDirection: `row`, height: h(20) }} onPress={() => props.navigation.navigate("Address")}>
           <CustomText fontSize={14} weight={"Medium"} style={{ marginLeft: w(10) }}>Localização</CustomText>
         </TouchableOpacity>
       </View>
@@ -40,7 +40,7 @@ const profilleOverview = (props) => {
 
       {/*Categorias*/}
       <View style={{ flexDirection: 'row', marginTop: h(10) }}>
-        <TouchableOpacity style={{ alignItems: `center`, flexDirection: `row`, height: h(20) }} onPress={() => props.navigation.navigate()}>
+        <TouchableOpacity style={{ alignItems: `center`, flexDirection: `row`, height: h(20) }} onPress={() => props.navigation.navigate("Category")}>
           <CustomText fontSize={14} weight={"Medium"} style={{ marginLeft: w(10) }}>Categorias</CustomText>
         </TouchableOpacity>
       </View>
@@ -56,7 +56,7 @@ const profilleOverview = (props) => {
 
       {/*Horários*/}
       <View style={{ flexDirection: 'row', marginTop: h(10) }}>
-        <TouchableOpacity style={{ alignItems: `center`, flexDirection: `row`, height: h(20) }} onPress={() => props.navigation.navigate()}>
+        <TouchableOpacity style={{ alignItems: `center`, flexDirection: `row`, height: h(20) }} onPress={() => props.navigation.navigate("Time")}>
           <CustomText fontSize={14} weight={"Medium"} style={{ marginLeft: w(10) }}>Horários</CustomText>
         </TouchableOpacity>
       </View>
@@ -72,7 +72,7 @@ const profilleOverview = (props) => {
 
       {/*Tags*/}
       <View style={{ flexDirection: 'row', marginTop: h(10) }}>
-        <TouchableOpacity style={{ alignItems: `center`, flexDirection: `row`, height: h(20) }} onPress={() => props.navigation.navigate()}>
+        <TouchableOpacity style={{ alignItems: `center`, flexDirection: `row`, height: h(20) }} onPress={() => props.navigation.navigate("Tags")}>
           <CustomText fontSize={14} weight={"Medium"} style={{ marginLeft: w(10) }}>Tags</CustomText>
         </TouchableOpacity>
       </View>
@@ -82,6 +82,14 @@ const profilleOverview = (props) => {
       <View style={{ flexDirection: 'row', marginTop: h(10) }}>
         <TouchableOpacity style={{ alignItems: `center`, flexDirection: `row`, height: h(20) }} onPress={() => props.navigation.navigate()}>
           <CustomText fontSize={14} weight={"Medium"} style={{ marginLeft: w(10) }}>Métodos de Pagamento</CustomText>
+        </TouchableOpacity>
+      </View>
+      <View style={{ width: w(306), height: h(1), backgroundColor: gray(), marginTop: h(8) }}></View>
+
+      {/*Sair*/}
+      <View style={{ flexDirection: 'row', marginTop: h(10) }}>
+        <TouchableOpacity style={{ alignItems: `center`, flexDirection: `row`, height: h(20) }} onPress={() => props.navigation.navigate()}>
+          <CustomText fontSize={14} color={red} weight={"Medium"} style={{ marginLeft: w(10) }}>Sair</CustomText>
         </TouchableOpacity>
       </View>
       <View style={{ width: w(306), height: h(1), backgroundColor: gray(), marginTop: h(8) }}></View>
