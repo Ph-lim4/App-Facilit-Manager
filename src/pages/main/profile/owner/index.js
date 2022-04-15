@@ -10,27 +10,23 @@ import { Button } from '../../../../components/ui/buttons';
 import Category_list from '../../../../components/ui/lists/category_list';
 
 
-const service = (props) => {
+const owner = (props) => {
     return (
         <Container>
-            <Header title={"Serviços"} onPress={() => props.navigation.navigate("ProfileOverview")} />
-            <Category_list title={"Corte Social"}/> 
+            <Header title={"Funcionários"} onPress={() => props.navigation.navigate("ProfileOverview")} />
+            <Category_list title={"Antônio"}/>
 
             <View style={{ width: w(306), height: h(1), backgroundColor: gray(), marginTop: h(8) }}></View>
             <View style={{ flexDirection: 'row' }}>
                 <TouchableOpacity style={{ width: h(200), height: h(16), alignItems: 'center', marginTop: w(16), flexDirection: 'row' }} onPress={() => props.navigation.navigate("Category_name")}>
                     <Feather name={"plus"} color={secondary_color()} size={h(16)} />
-                    <CustomText fontSize={16} weight={"Medium"} color={secondary_color}  >Adicionar serviço</CustomText>
+                    <CustomText fontSize={16} weight={"Medium"} color={secondary_color}  >Adicionar funcionário</CustomText>
                 </TouchableOpacity>
             </View>
-            <View style={{ flexDirection: 'row' }}>
-                <Button width={70} style={{ marginLeft: w(33), alignSelf: 'center', justifyContent: 'center', flex: 1, alignItems: 'center' }} marginBottom={39} marginTop={19} marginLeft={6} onPress={() => { }} title={"+Cabelo"} />
-                <Button width={70} style={{ marginLeft: w(33), alignSelf: 'center', justifyContent: 'center', flex: 1, alignItems: 'center' }} marginBottom={39} marginTop={19} marginLeft={18} onPress={() => { }} title={"+Barba"} />
-                <Button width={105} style={{ marginLeft: w(33), alignSelf: 'center', justifyContent: 'center', flex: 1, alignItems: 'center' }} marginBottom={39} marginTop={19} marginLeft={18} onPress={() => { }} title={"+Sobrancelha"} />
-            </View>
+
             <Footer onPress={() => props.navigation.navigate("ProfileOverview")} />
         </Container>
     );
 }
 
-export default service;
+export default owner;

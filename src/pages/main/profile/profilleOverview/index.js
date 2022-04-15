@@ -64,7 +64,7 @@ const profilleOverview = (props) => {
 
       {/*Funcionários*/}
       <View style={{ flexDirection: 'row', marginTop: h(10) }}>
-        <TouchableOpacity style={{ alignItems: `center`, flexDirection: `row`, height: h(20) }} onPress={() => props.navigation.navigate()}>
+        <TouchableOpacity style={{ alignItems: `center`, flexDirection: `row`, height: h(20) }} onPress={() => props.navigation.navigate("Owner")}>
           <CustomText fontSize={14} weight={"Medium"} style={{ marginLeft: w(10) }}>Funcionários</CustomText>
         </TouchableOpacity>
       </View>
@@ -80,7 +80,7 @@ const profilleOverview = (props) => {
 
       {/*Métodos de Pagamento*/}
       <View style={{ flexDirection: 'row', marginTop: h(10) }}>
-        <TouchableOpacity style={{ alignItems: `center`, flexDirection: `row`, height: h(20) }} onPress={() => props.navigation.navigate()}>
+        <TouchableOpacity style={{ alignItems: `center`, flexDirection: `row`, height: h(20) }} onPress={() => props.navigation.navigate("Payment_method")}>
           <CustomText fontSize={14} weight={"Medium"} style={{ marginLeft: w(10) }}>Métodos de Pagamento</CustomText>
         </TouchableOpacity>
       </View>
