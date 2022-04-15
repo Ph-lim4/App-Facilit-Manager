@@ -10,11 +10,11 @@ import { Button } from '../../../../components/ui/buttons';
 import Category_list from '../../../../components/ui/lists/category_list';
 
 
-const category = (props) => {
+const service = (props) => {
     return (
         <Container>
-            <Header title={"Categoria"} onPress={() => props.navigation.navigate("ProfileOverview")} />
-            <Category_list title={"Cortes"}/>
+            <Header title={"Serviços"} onPress={() => props.navigation.navigate("ProfileOverview")} />
+            <Category_list title={"Corte Social"}/> 
 
             <View style={{ width: w(306), height: h(1), backgroundColor: gray(), marginTop: h(8) }}></View>
             <View style={{ flexDirection: 'row' }}>
@@ -33,4 +33,4 @@ const category = (props) => {
     );
 }
 
-export default category;
+export default service;

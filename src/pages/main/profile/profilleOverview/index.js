@@ -48,7 +48,7 @@ const profilleOverview = (props) => {
 
       {/*Serviços*/}
       <View style={{ flexDirection: 'row', marginTop: h(10) }}>
-        <TouchableOpacity style={{ alignItems: `center`, flexDirection: `row`, height: h(20) }} onPress={() => props.navigation.navigate()}>
+        <TouchableOpacity style={{ alignItems: `center`, flexDirection: `row`, height: h(20) }} onPress={() => props.navigation.navigate("Service")}>
           <CustomText fontSize={14} weight={"Medium"} style={{ marginLeft: w(10) }}>Serviços</CustomText>
         </TouchableOpacity>
       </View>

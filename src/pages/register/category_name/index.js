@@ -8,7 +8,8 @@ const category_name = (props) => {
   return (
     <Container>
       <Header title={"Nome da Categoria"} onPress={() => props.navigation.navigate("Category")}/>
-      <Input placeholder={"Telefone"} marginTop={0} onChangeText={text => console.log(text)}/>
+      {/** Precisa de um limite de 20 caracteres */}
+      <Input placeholder={"Nome da categoria"} marginTop={0} onChangeText={text => console.log(text)}/>
       <Footer height={530} onPress={() => props.navigation.navigate("Category")}/>
     </Container>
   );
