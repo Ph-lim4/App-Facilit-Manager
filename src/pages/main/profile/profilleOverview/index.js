@@ -64,7 +64,7 @@ const profilleOverview = (props) => {
 
       {/*Funcionários*/}
       <View style={{ flexDirection: 'row', marginTop: h(10) }}>
-        <TouchableOpacity style={{ alignItems: `center`, flexDirection: `row`, height: h(20) }} onPress={() => props.navigation.navigate("Owner")}>
+        <TouchableOpacity style={{ alignItems: `center`, flexDirection: `row`, height: h(20) }} onPress={() => props.navigation.navigate("Employee")}>
           <CustomText fontSize={14} weight={"Medium"} style={{ marginLeft: w(10) }}>Funcionários</CustomText>
         </TouchableOpacity>
       </View>

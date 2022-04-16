@@ -7,14 +7,14 @@ import { h, w } from '../../../../components/dimens';
 import { Feather } from '@expo/vector-icons';
 import { mid_gray, primary_color, secondary_color, gray, dark_gray } from '../../../../components/colors';
 import { Button } from '../../../../components/ui/buttons';
-import Category_list from '../../../../components/ui/lists/category_list';
+import Employee_list from '../../../../components/ui/lists/employee_list';
 
 
-const owner = (props) => {
+const employee = (props) => {
     return (
         <Container>
             <Header title={"Funcionários"} onPress={() => props.navigation.navigate("ProfileOverview")} />
-            <Category_list title={"Antônio"}/>
+            <Employee_list title={"Antônio"}/>
 
             <View style={{ width: w(306), height: h(1), backgroundColor: gray(), marginTop: h(8) }}></View>
             <View style={{ flexDirection: 'row' }}>
@@ -29,4 +29,4 @@ const owner = (props) => {
     );
 }
 
-export default owner;
+export default employee;

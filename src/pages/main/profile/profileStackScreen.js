@@ -10,8 +10,11 @@ import category from './category';
 import category_name from './category_name';
 import service from './service';
 import service_characteristics from './service_characteristics';
-import owner from './owner';
+import employee from './employee';
 import payment_method from './payment_method';
+import select_time from './select_time';
+import select_break from './select_break';
+import payment_method_name from './payment_method_name';
 
 const ProfileStack = createStackNavigator();
 const profile = () => {
@@ -25,8 +28,12 @@ const profile = () => {
     <ProfileStack.Screen name="Category_name" component={category_name} options={{headerShown: false}}/>
     <ProfileStack.Screen name="Service" component={service} options={{headerShown: false}}/>
     <ProfileStack.Screen name="Service_characteristics" component={service_characteristics} options={{headerShown: false}}/>
-    <ProfileStack.Screen name="Owner" component={owner} options={{headerShown: false}}/>
+    <ProfileStack.Screen name="Employee" component={employee} options={{headerShown: false}}/>
     <ProfileStack.Screen name="Payment_method" component={payment_method} options={{headerShown: false}}/>
+    <ProfileStack.Screen name='Select_time' component={select_time} options={{headerShown: false}}/>
+    <ProfileStack.Screen name='Select_break' component={select_break} options={{headerShown: false}}/>
+    <ProfileStack.Screen name='Add_employee' component={select_break} options={{headerShown: false}}/>
+    <ProfileStack.Screen name="Payment_method_name" component={payment_method_name} options={{headerShown: false}}/>
   </ProfileStack.Navigator>;
 }
 

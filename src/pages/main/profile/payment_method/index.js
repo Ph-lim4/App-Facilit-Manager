@@ -7,14 +7,14 @@ import { h, w } from '../../../../components/dimens';
 import { Feather } from '@expo/vector-icons';
 import { mid_gray, primary_color, secondary_color, gray, dark_gray } from '../../../../components/colors';
 import { Button } from '../../../../components/ui/buttons';
-import Category_list from '../../../../components/ui/lists/category_list';
+import Payment_method_list from '../../../../components/ui/lists/payment_method_list';
 
 
 const payment_method = (props) => {
     return (
         <Container>
             <Header title={"Métodos de pagamento"} onPress={() => props.navigation.navigate("ProfileOverview")} />
-            <Category_list title={"Pix"}/>
+            <Payment_method_list title={"Pix"}/>
 
             <View style={{ width: w(306), height: h(1), backgroundColor: gray(), marginTop: h(8) }}></View>
             <View style={{ flexDirection: 'row' }}>
