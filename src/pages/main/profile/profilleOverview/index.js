@@ -24,7 +24,7 @@ const profilleOverview = (props) => {
 
       {/*Imagens*/}
       <View style={{ flexDirection: 'row', marginTop: h(10) }}>
-        <TouchableOpacity style={{ alignItems: `center`, flexDirection: `row`, height: h(20) }} onPress={() => props.navigation.navigate()}>
+        <TouchableOpacity style={{ alignItems: `center`, flexDirection: `row`, height: h(20) }} onPress={() => props.navigation.navigate("Images")}>
           <CustomText fontSize={14} weight={"Medium"} style={{ marginLeft: w(10) }}>Imagens</CustomText>
         </TouchableOpacity>
       </View>

@@ -15,6 +15,7 @@ import payment_method from './payment_method';
 import select_time from './select_time';
 import select_break from './select_break';
 import payment_method_name from './payment_method_name';
+import images from './images';
 
 const ProfileStack = createStackNavigator();
 const profile = () => {
@@ -34,6 +35,7 @@ const profile = () => {
     <ProfileStack.Screen name='Select_break' component={select_break} options={{headerShown: false}}/>
     <ProfileStack.Screen name='Add_employee' component={select_break} options={{headerShown: false}}/>
     <ProfileStack.Screen name="Payment_method_name" component={payment_method_name} options={{headerShown: false}}/>
+    <ProfileStack.Screen name="Images" component={images} options={{headerShown: false}}/>
   </ProfileStack.Navigator>;
 }
 
